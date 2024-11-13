@@ -1,0 +1,92 @@
+/* body{
+ 
+   font-family: Arial, sans-serif;
+   font: center;
+   margin: 0;
+   padding: 0;
+   background-color: beige;
+
+}
+form{
+    background-color: violet(255, 245, 240);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid wheat;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.wrap{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+} */
+body {
+    font-family: 'Lucida Calligraphy', cursive;
+    background: url('https://example.com/enchanted-forest.jpg') no-repeat center center/cover;
+    color: #4b3d3d;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: rgba(240, 229, 216, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: 'Lucida Calligraphy', cursive;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #6b4f4f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Lucida Calligraphy', cursive;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4b3d3d;
+}

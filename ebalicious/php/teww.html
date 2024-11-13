@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholar Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#scholarList {
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+    font-weight: bold;
+}
+
+</style>
+<body>
+
+    <div class="container">
+        <h1>Scholar Tracking</h1>
+        
+        <form id="scholarForm">
+            <div class="form-group">
+                <label for="scholarName">Scholar Name:</label>
+                <input type="text" id="scholarName" required>
+            </div>
+            <div class="form-group">
+                <label for="researchField">Research Field:</label>
+                <input type="text" id="researchField" required>
+            </div>
+            <div class="form-group">
+                <label for="publicationCount">Number of Publications:</label>
+                <input type="number" id="publicationCount" required min="0">
+            </div>
+            <div class="form-group">
+                <button type="submit">Add Scholar</button>
+            </div>
+        </form>
+
+        <div id="scholarList">
+            <h2>Scholar List</h2>
+            <ul id="scholarListItems">
+                <!-- Scholar data will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

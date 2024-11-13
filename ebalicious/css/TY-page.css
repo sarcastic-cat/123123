@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Lively gradient background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.thank-you-container {
+    background-color: rgba(185, 2, 2, 0.15); /* Light opacity for a brighter look */
+    padding: 50px 40px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thank-you-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.thank-you-title {
+    font-size: 3em;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    color: #fff; /* Bright white for contrast */
+    text-transform: uppercase;
+}
+
+.thank-you-message {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #f3f3f3; /* Softer white for readability */
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background: #ff5f6d; /* Bright pink-red button */
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 50px;
+    margin: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 6px 20px rgba(255, 95, 109, 0.5); /* Button shadow */
+}
+
+.button:hover {
+    background-color: #ff2d4e; /* Darker shade on hover */
+    transform: translateY(-5px);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .thank-you-container {
+        padding: 30px 20px;
+    }
+
+    .thank-you-title {
+        font-size: 2.5em;
+    }
+
+    .button {
+        padding: 12px 25px;
+    }
+}

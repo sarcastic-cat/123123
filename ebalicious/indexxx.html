@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website with Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home {
+    background-color: #e2e2e2;
+}
+
+#about {
+    background-color: #ddd;
+}
+
+#services {
+    background-color: #e2e2e2;
+}
+
+#contact {
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+</style>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Scholars</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Login</a></li>
+                <li><a href="#about">Manage</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="start.html">Log out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Sections -->
+    <section id="home" class="section">
+        <h1>Welcome to My Scholar Tracking System</h1>
+        <p>This is the home section. You can add your content here.</p>
+    </section>
+
+  
+
+</body>
+</html>
+]
